@@ -1,0 +1,4 @@
+LoginPage.class
+ValidCredentials.class
+EmptyCredentials.class
+InvalidCredentials.class

@@ -1,0 +1,11 @@
+<suite name="suite1">
+    <test name="SumergeTechnicalAssessment">
+        <classes>
+            <class name="LoginPage"></class>
+            <class name="EmptyCredentials"></class>
+            <class name="ValidCredentials"></class>
+            <class name="InvalidCredentials"></class>
+
+        </classes>
+    </test>
+</suite>
