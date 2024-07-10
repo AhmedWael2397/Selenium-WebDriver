@@ -61,32 +61,3 @@ Delays (`Thread.sleep()`) are added in the test cases only for display purposes.
     ```bash
     mvn test
     ```
-
-## Sample Code
-
-### Base Setup Class
-
-```java
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-
-public class SetUp {
-    protected WebDriver driver;
-
-    @BeforeClass
-    public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.get(Config.getProperty("url"));
-        driver.manage().window().fullscreen();
-    }
-
-    @AfterClass
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(Config.getIntProperty("timeout"));
-        driver.quit();
-    }
-}
