@@ -11,10 +11,6 @@ The project is organized into the following main components:
 - **Base Setup Class**: Contains the common setup and teardown methods.
 - **Test Classes**: Each test class extends the base setup class and contains specific test methods.
 
-### Configuration
-
-A `config.properties` file is used to manage configuration settings like the URL of the application, browser type, and timeout durations. A utility class (`Config.java`) is used to read these properties.
-
 ### Test Cases
 
 #### 1. **EmptyCredentials.java**
