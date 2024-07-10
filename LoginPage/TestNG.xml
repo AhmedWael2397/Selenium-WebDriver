@@ -3,9 +3,8 @@
         <classes>
             <class name="LoginPage"></class>
             <class name="EmptyCredentials"></class>
-            <class name="ValidCredentials"></class>
             <class name="InvalidCredentials"></class>
-
+            <class name="ValidCredentials"></class>
         </classes>
     </test>
 </suite>
